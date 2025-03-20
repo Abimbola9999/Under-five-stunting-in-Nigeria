@@ -131,6 +131,7 @@ svyset[pw=wgt],psu(v001)strata(v002)singleunit(center)
 ```
 
 ### Exploratory Data Analysis
+
 EDA involved explaining the nutrition data to answer the key questions as:
 
 - What is the prevalence of stunting among the children aged below five years?
@@ -138,6 +139,7 @@ EDA involved explaining the nutrition data to answer the key questions as:
 - What is the influence of individual, maternal, household and community level factors on stunting among under-five children?
 
 ### Data Analysis
+
 The code of the univariate analysis includes:
 
 - Percentage Distribution of Stunting by Individual Factors
