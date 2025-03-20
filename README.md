@@ -99,7 +99,9 @@ svy:logistic stunt i.media_exposure i.dist_health_facility
 The analysis results are summarised as follows:
 
 ### Data Visualizations
-
+![STUNTING TRACKER 1](https://github.com/user-attachments/assets/1bd2d30f-61c3-4ba4-8e60-28fac231e06e)
+![STUNTING TRACKER 2](https://github.com/user-attachments/assets/d0212b84-0423-4090-9d35-7700f34852d0)
+![STUNTING TRACKER 3](https://github.com/user-attachments/assets/3d95b0d4-e1d3-47db-ad5b-98d12247d871)
 
 ### Recommendations
 Based on the following analysis, we recommend the following actions:
