@@ -40,68 +40,66 @@ EDA involved explaining the nutrition data to answer the key questions as:
 
 ### Data Analysis
 The code of the univariate analysis includes:
-```Percentage Distribution of Stunting by Individual Factors
+``Percentage Distribution of Stunting by Individual Factors
 tab child_age2[aw=wgt]
 tab child_sex[aw=wgt]
 tab birth_size[aw=wgt]
-```
-```Percentage Distribution of Stunting by Maternal Factors
+``
+``Percentage Distribution of Stunting by Maternal Factors
 tab maternal_age2[aw=wgt]
 tab birth_int2[aw=wgt]
 tab level_edu[aw=wgt
-```
-```Percentage Distribution of Stunting by Household Factors
+``
+``Percentage Distribution of Stunting by Household Factors
 tab num_under_5[aw=wgt]
 tab wealth_index[aw=wgt]
 tab fam_size2[aw=wgt]
-```
-```Percentage Distribution of Stunting by Community Factors
+``
+``Percentage Distribution of Stunting by Community Factors
 tab region[aw=wgt]
 tab residence[aw=wgt]
-```
+``
 The code of the bivariate analysis includes:
-``` Cross tabulation of stunting by individual factors
+`` Cross tabulation of stunting by individual factors
 svy:tab child_age2 stunt,per obs row
 svy:tab child_sex stunt,per obs col
 svy:tab birth_size stunt,per obs row
-``` 
-```Cross tabulation of stunting by maternal factors
+``
+``Cross tabulation of stunting by maternal factors
 svy:tab maternal_age2 stunt,per obs row
 svy:tab birth_int2 stunt,per obs row
 svy:tab level_edu stunt,per obs row
-```
-```Cross tabulation of stunting by household factors
+``
+``Cross tabulation of stunting by household factors
 svy:tab num_under_5 stunt,per obs row
 svy:tab wealth_index stunt,per obs row
 svy:tab fam_size2 stunt,per obs row
-```
-```Cross tabulation of stunting by community factors
+``
+``Cross tabulation of stunting by community factors
 svy:tab region stunt,per obs row
 svy:tab residence stunt,per obs row
-```
+``
 The code of the multivariate analysis includes:
-```Influence of Individual level factors on stunting
+``Influence of Individual level factors on stunting
 svy:logistic stunt i.child_age2 i.child_sex i.birth_size
-```
-```Influence of Maternal level factors on stunting
+``
+``Influence of Maternal level factors on stunting
 svy:logistic stunt i.maternal_age2 i.birth_int2
-```
-```Influence of Household level factors on stunting
+``
+``Influence of Household level factors on stunting
 svy:logistic stunt i.num_under_5 i.level_edu i.wealth_index i.fam_size2
-```
-```Influence of Community level factors on stunting
+``
+``Influence of Community level factors on stunting
 svy:logistic stunt i.region i.residence
-```
-```Influence of media exposure and distance to health facility
+``
+``Influence of media exposure and distance to health facility
 svy:logistic stunt i.media_exposure i.dist_health_facility
-```
+``
 ### Results/Findings
 The analysis results are summarised as follows:
 
 ### Data Visualizations
 ![STUNTING TRACKER 1](https://github.com/user-attachments/assets/1bd2d30f-61c3-4ba4-8e60-28fac231e06e)
-![STUNTING TRACKER 2](https://github.com/user-attachments/assets/d0212b84-0423-4090-9d35-7700f34852d0)
-![STUNTING TRACKER 3](https://github.com/user-attachments/assets/3d95b0d4-e1d3-47db-ad5b-98d12247d871)
 
 ### Recommendations
 Based on the following analysis, we recommend the following actions:
