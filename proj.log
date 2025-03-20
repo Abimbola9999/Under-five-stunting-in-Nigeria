@@ -1,0 +1,1427 @@
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  C:\Users\DELL\Desktop\Directory\proj.log
+  log type:  text
+ opened on:   8 Mar 2025, 10:21:00
+
+. 
+. /*Data Management*/
+. 
+. /*Renaming of Individual Codes*/
+. rename hw1 child_age
+
+. rename b4 child_sex
+
+. rename m18 birth_size
+
+. 
+. /*Renaming of Maternal Codes*/
+. rename v212 maternal_age
+
+. rename b11 birth_int
+
+. 
+. /*Renaming of Household Codes*/
+. rename v137 no_under_5
+
+. rename v106 level_edu
+
+. rename v190 wealth_index
+
+. rename v136 fam_size
+
+. 
+. /*Renaming of Community Codes*/
+. rename v024 region
+
+. rename v025 residence
+
+. 
+. /* Renaming of intervening variables*/
+. rename v159 freq_watch_tv
+
+. rename v158 freq_list_radio
+
+. rename v157 freq_read_news
+
+. rename v467d dist_health_facility
+
+. 
+. /*Keeping of Variables*/
+. keep stunt v005 v001 v002 child_age child_sex birth_size maternal_age birth_int no_under_5 level_edu wealth_index fam_size region residence freq_watch_tv freq_
+> list_radio freq_read_news dist_health_facility
+
+. 
+. /*Frequency Dist Table*/
+. tab1 child_age child_sex birth_size maternal_age birth_int no_under_5 level_edu wealth_index fam_size region residence freq_watch_tv freq_list_radio freq_read_
+> news dist_health_facility
+
+-> tabulation of child_age  
+
+Child's age |
+  in months |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |        274        1.00        1.00
+          1 |        537        1.95        2.95
+          2 |        526        1.91        4.86
+          3 |        550        2.00        6.85
+          4 |        572        2.08        8.93
+          5 |        530        1.93       10.86
+          6 |        566        2.06       12.91
+          7 |        546        1.98       14.90
+          8 |        539        1.96       16.85
+          9 |        561        2.04       18.89
+         10 |        554        2.01       20.91
+         11 |        449        1.63       22.54
+         12 |        601        2.18       24.72
+         13 |        629        2.28       27.00
+         14 |        584        2.12       29.13
+         15 |        546        1.98       31.11
+         16 |        488        1.77       32.88
+         17 |        431        1.57       34.45
+         18 |        461        1.67       36.12
+         19 |        412        1.50       37.62
+         20 |        427        1.55       39.17
+         21 |        419        1.52       40.69
+         22 |        374        1.36       42.05
+         23 |        373        1.35       43.41
+         24 |        592        2.15       45.56
+         25 |        547        1.99       47.54
+         26 |        486        1.77       49.31
+         27 |        417        1.51       50.82
+         28 |        397        1.44       52.26
+         29 |        379        1.38       53.64
+         30 |        381        1.38       55.03
+         31 |        369        1.34       56.37
+         32 |        403        1.46       57.83
+         33 |        404        1.47       59.30
+         34 |        402        1.46       60.76
+         35 |        382        1.39       62.15
+         36 |        583        2.12       64.26
+         37 |        624        2.27       66.53
+         38 |        577        2.10       68.63
+         39 |        529        1.92       70.55
+         40 |        383        1.39       71.94
+         41 |        335        1.22       73.16
+         42 |        365        1.33       74.48
+         43 |        392        1.42       75.91
+         44 |        398        1.45       77.35
+         45 |        397        1.44       78.79
+         46 |        421        1.53       80.32
+         47 |        363        1.32       81.64
+         48 |        470        1.71       83.35
+         49 |        576        2.09       85.44
+         50 |        451        1.64       87.08
+         51 |        471        1.71       88.79
+         52 |        359        1.30       90.09
+         53 |        347        1.26       91.35
+         54 |        359        1.30       92.66
+         55 |        411        1.49       94.15
+         56 |        449        1.63       95.78
+         57 |        382        1.39       97.17
+         58 |        381        1.38       98.55
+         59 |        398        1.45      100.00
+------------+-----------------------------------
+      Total |     27,529      100.00
+
+-> tabulation of child_sex  
+
+     Sex of |
+      child |      Freq.     Percent        Cum.
+------------+-----------------------------------
+       Male |     13,919       50.43       50.43
+     Female |     13,680       49.57      100.00
+------------+-----------------------------------
+      Total |     27,599      100.00
+
+-> tabulation of birth_size  
+
+    Size of child at |
+               birth |      Freq.     Percent        Cum.
+---------------------+-----------------------------------
+          Very large |      3,741       13.55       13.55
+ Larger than average |      8,391       30.40       43.96
+             Average |     11,186       40.53       84.49
+Smaller than average |      2,818       10.21       94.70
+          Very small |      1,064        3.86       98.55
+          Don't know |        126        0.46       99.01
+                   9 |        273        0.99      100.00
+---------------------+-----------------------------------
+               Total |     27,599      100.00
+
+-> tabulation of maternal_age  
+
+     Age of |
+ respondent |
+     at 1st |
+      birth |      Freq.     Percent        Cum.
+------------+-----------------------------------
+         12 |        266        0.96        0.96
+         13 |        564        2.04        3.01
+         14 |      1,312        4.75        7.76
+         15 |      2,318        8.40       16.16
+         16 |      2,972       10.77       26.93
+         17 |      3,218       11.66       38.59
+         18 |      2,882       10.44       49.03
+         19 |      2,627        9.52       58.55
+         20 |      2,296        8.32       66.87
+         21 |      1,752        6.35       73.22
+         22 |      1,544        5.59       78.81
+         23 |      1,284        4.65       83.46
+         24 |      1,116        4.04       87.51
+         25 |        825        2.99       90.50
+         26 |        629        2.28       92.78
+         27 |        519        1.88       94.66
+         28 |        435        1.58       96.23
+         29 |        315        1.14       97.37
+         30 |        208        0.75       98.13
+         31 |        157        0.57       98.70
+         32 |        112        0.41       99.10
+         33 |         88        0.32       99.42
+         34 |         56        0.20       99.62
+         35 |         37        0.13       99.76
+         36 |         25        0.09       99.85
+         37 |         20        0.07       99.92
+         38 |          4        0.01       99.93
+         39 |          5        0.02       99.95
+         40 |          2        0.01       99.96
+         41 |          5        0.02       99.98
+         42 |          1        0.00       99.98
+         43 |          1        0.00       99.99
+         45 |          4        0.01      100.00
+------------+-----------------------------------
+      Total |     27,599      100.00
+
+-> tabulation of birth_int  
+
+  Preceding |
+      birth |
+   interval |
+   (months) |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          9 |          9        0.04        0.04
+         10 |         49        0.22        0.26
+         11 |         79        0.35        0.61
+         12 |        136        0.61        1.22
+         13 |        172        0.77        1.99
+         14 |        174        0.78        2.77
+         15 |        226        1.01        3.78
+         16 |        245        1.10        4.88
+         17 |        304        1.36        6.24
+         18 |        330        1.48        7.71
+         19 |        358        1.60        9.32
+         20 |        444        1.99       11.30
+         21 |        605        2.71       14.01
+         22 |        824        3.69       17.70
+         23 |        862        3.86       21.55
+         24 |        733        3.28       24.83
+         25 |        984        4.40       29.24
+         26 |        960        4.30       33.53
+         27 |        785        3.51       37.04
+         28 |        756        3.38       40.43
+         29 |        679        3.04       43.47
+         30 |        638        2.85       46.32
+         31 |        627        2.81       49.13
+         32 |        607        2.72       51.84
+         33 |        678        3.03       54.87
+         34 |        668        2.99       57.86
+         35 |        632        2.83       60.69
+         36 |        498        2.23       62.92
+         37 |        597        2.67       65.59
+         38 |        530        2.37       67.96
+         39 |        463        2.07       70.03
+         40 |        393        1.76       71.79
+         41 |        345        1.54       73.34
+         42 |        297        1.33       74.67
+         43 |        327        1.46       76.13
+         44 |        311        1.39       77.52
+         45 |        279        1.25       78.77
+         46 |        268        1.20       79.97
+         47 |        280        1.25       81.22
+         48 |        237        1.06       82.28
+         49 |        241        1.08       83.36
+         50 |        248        1.11       84.47
+         51 |        174        0.78       85.25
+         52 |        175        0.78       86.03
+         53 |        156        0.70       86.73
+         54 |        156        0.70       87.43
+         55 |        115        0.51       87.94
+         56 |        148        0.66       88.60
+         57 |        114        0.51       89.11
+         58 |        130        0.58       89.70
+         59 |        122        0.55       90.24
+         60 |        118        0.53       90.77
+         61 |        112        0.50       91.27
+         62 |         88        0.39       91.66
+         63 |         71        0.32       91.98
+         64 |         71        0.32       92.30
+         65 |         86        0.38       92.68
+         66 |         46        0.21       92.89
+         67 |         64        0.29       93.18
+         68 |         68        0.30       93.48
+         69 |         59        0.26       93.74
+         70 |         62        0.28       94.02
+         71 |         60        0.27       94.29
+         72 |         70        0.31       94.60
+         73 |         71        0.32       94.92
+         74 |         48        0.21       95.14
+         75 |         45        0.20       95.34
+         76 |         46        0.21       95.54
+         77 |         30        0.13       95.68
+         78 |         39        0.17       95.85
+         79 |         32        0.14       96.00
+         80 |         39        0.17       96.17
+         81 |         38        0.17       96.34
+         82 |         36        0.16       96.50
+         83 |         31        0.14       96.64
+         84 |         35        0.16       96.80
+         85 |         29        0.13       96.93
+         86 |         24        0.11       97.03
+         87 |         21        0.09       97.13
+         88 |         28        0.13       97.25
+         89 |         22        0.10       97.35
+         90 |         23        0.10       97.45
+         91 |         24        0.11       97.56
+         92 |         20        0.09       97.65
+         93 |         14        0.06       97.71
+         94 |         17        0.08       97.79
+         95 |         16        0.07       97.86
+         96 |         23        0.10       97.96
+         97 |         16        0.07       98.04
+         98 |         22        0.10       98.13
+         99 |         13        0.06       98.19
+        100 |         12        0.05       98.25
+        101 |          5        0.02       98.27
+        102 |         12        0.05       98.32
+        103 |         16        0.07       98.39
+        104 |         11        0.05       98.44
+        105 |         19        0.09       98.53
+        106 |         12        0.05       98.58
+        107 |         16        0.07       98.65
+        108 |          8        0.04       98.69
+        109 |         13        0.06       98.75
+        110 |         13        0.06       98.81
+        111 |         13        0.06       98.86
+        112 |         10        0.04       98.91
+        113 |          7        0.03       98.94
+        114 |         10        0.04       98.98
+        115 |          4        0.02       99.00
+        116 |          8        0.04       99.04
+        117 |          9        0.04       99.08
+        118 |          3        0.01       99.09
+        119 |          9        0.04       99.13
+        120 |          6        0.03       99.16
+        121 |          5        0.02       99.18
+        122 |          4        0.02       99.20
+        123 |          4        0.02       99.22
+        124 |          4        0.02       99.23
+        125 |          2        0.01       99.24
+        126 |          1        0.00       99.25
+        127 |          7        0.03       99.28
+        128 |          4        0.02       99.30
+        129 |          2        0.01       99.31
+        130 |          4        0.02       99.32
+        131 |          3        0.01       99.34
+        132 |          4        0.02       99.36
+        133 |          6        0.03       99.38
+        134 |          1        0.00       99.39
+        135 |          4        0.02       99.40
+        136 |          4        0.02       99.42
+        137 |          3        0.01       99.44
+        139 |          5        0.02       99.46
+        140 |          3        0.01       99.47
+        141 |          6        0.03       99.50
+        142 |          1        0.00       99.50
+        143 |          6        0.03       99.53
+        144 |          4        0.02       99.55
+        145 |          7        0.03       99.58
+        146 |          3        0.01       99.59
+        147 |          3        0.01       99.61
+        148 |          2        0.01       99.62
+        149 |          1        0.00       99.62
+        150 |          3        0.01       99.63
+        151 |          2        0.01       99.64
+        152 |          1        0.00       99.65
+        153 |          3        0.01       99.66
+        154 |          4        0.02       99.68
+        155 |          1        0.00       99.68
+        156 |          2        0.01       99.69
+        157 |          4        0.02       99.71
+        158 |          5        0.02       99.73
+        159 |          4        0.02       99.75
+        160 |          1        0.00       99.75
+        161 |          1        0.00       99.76
+        162 |          1        0.00       99.76
+        163 |          2        0.01       99.77
+        164 |          1        0.00       99.78
+        166 |          2        0.01       99.79
+        167 |          1        0.00       99.79
+        170 |          1        0.00       99.79
+        172 |          1        0.00       99.80
+        174 |          2        0.01       99.81
+        175 |          2        0.01       99.82
+        176 |          2        0.01       99.83
+        179 |          1        0.00       99.83
+        180 |          1        0.00       99.83
+        182 |          2        0.01       99.84
+        183 |          1        0.00       99.85
+        185 |          2        0.01       99.86
+        187 |          2        0.01       99.87
+        190 |          2        0.01       99.87
+        191 |          1        0.00       99.88
+        194 |          1        0.00       99.88
+        197 |          1        0.00       99.89
+        198 |          2        0.01       99.90
+        199 |          2        0.01       99.91
+        200 |          1        0.00       99.91
+        202 |          1        0.00       99.91
+        203 |          1        0.00       99.92
+        204 |          2        0.01       99.93
+        207 |          1        0.00       99.93
+        209 |          1        0.00       99.94
+        213 |          1        0.00       99.94
+        215 |          1        0.00       99.95
+        216 |          1        0.00       99.95
+        217 |          1        0.00       99.96
+        220 |          1        0.00       99.96
+        222 |          1        0.00       99.96
+        225 |          1        0.00       99.97
+        226 |          1        0.00       99.97
+        231 |          1        0.00       99.98
+        256 |          1        0.00       99.98
+        265 |          1        0.00       99.99
+        271 |          1        0.00       99.99
+        276 |          1        0.00      100.00
+        327 |          1        0.00      100.00
+------------+-----------------------------------
+      Total |     22,349      100.00
+
+-> tabulation of no_under_5  
+
+  Number of |
+ children 5 |
+  and under |
+         in |
+  household |
+  (de jure) |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |        137        0.50        0.50
+          1 |      6,761       24.50       24.99
+          2 |     11,263       40.81       65.80
+          3 |      5,693       20.63       86.43
+          4 |      2,225        8.06       94.49
+          5 |      1,028        3.72       98.22
+          6 |        340        1.23       99.45
+          7 |        128        0.46       99.91
+          8 |         17        0.06       99.97
+          9 |          7        0.03      100.00
+------------+-----------------------------------
+      Total |     27,599      100.00
+
+-> tabulation of level_edu  
+
+     Highest |
+ educational |
+       level |      Freq.     Percent        Cum.
+-------------+-----------------------------------
+No education |     12,713       46.06       46.06
+     Primary |      5,626       20.38       66.45
+   Secondary |      7,490       27.14       93.59
+      Higher |      1,770        6.41      100.00
+-------------+-----------------------------------
+       Total |     27,599      100.00
+
+-> tabulation of wealth_index  
+
+     Wealth |
+      index |      Freq.     Percent        Cum.
+------------+-----------------------------------
+    Poorest |      6,051       21.92       21.92
+     Poorer |      6,276       22.74       44.66
+     Middle |      5,523       20.01       64.68
+     Richer |      5,183       18.78       83.46
+    Richest |      4,566       16.54      100.00
+------------+-----------------------------------
+      Total |     27,599      100.00
+
+-> tabulation of fam_size  
+
+  Number of |
+  household |
+    members |
+   (listed) |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          2 |        211        0.76        0.76
+          3 |      2,264        8.20        8.97
+          4 |      3,751       13.59       22.56
+          5 |      4,362       15.80       38.36
+          6 |      3,849       13.95       52.31
+          7 |      3,273       11.86       64.17
+          8 |      2,500        9.06       73.23
+          9 |      1,918        6.95       80.18
+         10 |      1,429        5.18       85.35
+         11 |      1,056        3.83       89.18
+         12 |        787        2.85       92.03
+         13 |        597        2.16       94.20
+         14 |        440        1.59       95.79
+         15 |        318        1.15       96.94
+         16 |        185        0.67       97.61
+         17 |        205        0.74       98.36
+         18 |        130        0.47       98.83
+         19 |        100        0.36       99.19
+         20 |         71        0.26       99.45
+         21 |         25        0.09       99.54
+         22 |          6        0.02       99.56
+         23 |         40        0.14       99.70
+         24 |         21        0.08       99.78
+         25 |         13        0.05       99.83
+         26 |          9        0.03       99.86
+         27 |          8        0.03       99.89
+         28 |          4        0.01       99.90
+         29 |          9        0.03       99.93
+         30 |          4        0.01       99.95
+         32 |          4        0.01       99.96
+         34 |          4        0.01       99.98
+         35 |          6        0.02      100.00
+------------+-----------------------------------
+      Total |     27,599      100.00
+
+-> tabulation of region  
+
+       Region |      Freq.     Percent        Cum.
+--------------+-----------------------------------
+North Central |      4,132       14.97       14.97
+   North East |      5,645       20.45       35.43
+   North West |      8,522       30.88       66.30
+   South East |      2,481        8.99       75.29
+  South South |      3,324       12.04       87.34
+   South West |      3,495       12.66      100.00
+--------------+-----------------------------------
+        Total |     27,599      100.00
+
+-> tabulation of residence  
+
+    Type of |
+   place of |
+  residence |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      Urban |      9,393       34.03       34.03
+      Rural |     18,206       65.97      100.00
+------------+-----------------------------------
+      Total |     27,599      100.00
+
+-> tabulation of freq_watch_tv  
+
+Frequency of watching |
+           television |      Freq.     Percent        Cum.
+----------------------+-----------------------------------
+           Not at all |     14,678       53.18       53.18
+Less than once a week |      4,762       17.25       70.44
+ At least once a week |      8,041       29.14       99.57
+                    9 |        118        0.43      100.00
+----------------------+-----------------------------------
+                Total |     27,599      100.00
+
+-> tabulation of freq_list_radio  
+
+         Frequency of |
+   listening to radio |      Freq.     Percent        Cum.
+----------------------+-----------------------------------
+           Not at all |     11,172       40.48       40.48
+Less than once a week |      6,761       24.50       64.98
+ At least once a week |      9,566       34.66       99.64
+                    9 |        100        0.36      100.00
+----------------------+-----------------------------------
+                Total |     27,599      100.00
+
+-> tabulation of freq_read_news  
+
+ Frequency of reading |
+newspaper or magazine |      Freq.     Percent        Cum.
+----------------------+-----------------------------------
+           Not at all |     23,462       85.01       85.01
+Less than once a week |      2,234        8.09       93.10
+ At least once a week |      1,740        6.30       99.41
+                    9 |        163        0.59      100.00
+----------------------+-----------------------------------
+                Total |     27,599      100.00
+
+-> tabulation of dist_health_facility  
+
+  Getting medical |
+   help for self: |
+      distance to |
+  health facility |      Freq.     Percent        Cum.
+------------------+-----------------------------------
+      Big problem |      8,795       31.87       31.87
+Not a big problem |     18,693       67.73       99.60
+                9 |        111        0.40      100.00
+------------------+-----------------------------------
+            Total |     27,599      100.00
+
+. 
+. /* Checking for number lable*/
+. tab freq_watch_tv,nol
+
+  Frequency |
+of watching |
+ television |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |     14,678       53.18       53.18
+          1 |      4,762       17.25       70.44
+          2 |      8,041       29.14       99.57
+          9 |        118        0.43      100.00
+------------+-----------------------------------
+      Total |     27,599      100.00
+
+. tab freq_list_radio,nol
+
+  Frequency |
+         of |
+  listening |
+   to radio |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |     11,172       40.48       40.48
+          1 |      6,761       24.50       64.98
+          2 |      9,566       34.66       99.64
+          9 |        100        0.36      100.00
+------------+-----------------------------------
+      Total |     27,599      100.00
+
+. tab freq_read_news,nol
+
+  Frequency |
+ of reading |
+  newspaper |
+or magazine |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |     23,462       85.01       85.01
+          1 |      2,234        8.09       93.10
+          2 |      1,740        6.30       99.41
+          9 |        163        0.59      100.00
+------------+-----------------------------------
+      Total |     27,599      100.00
+
+. tab dist_health_facility,nol
+
+    Getting |
+    medical |
+   help for |
+      self: |
+distance to |
+     health |
+   facility |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          1 |      8,795       31.87       31.87
+          2 |     18,693       67.73       99.60
+          9 |        111        0.40      100.00
+------------+-----------------------------------
+      Total |     27,599      100.00
+
+. 
+. /*Treatment of Missing Values*/
+. replace birth_size=. if birth_size==8|birth_size==9
+(399 real changes made, 399 to missing)
+
+. replace freq_watch_tv=. if freq_watch_tv==9
+(118 real changes made, 118 to missing)
+
+. replace freq_list_radio=. if freq_list_radio==9
+(100 real changes made, 100 to missing)
+
+. replace freq_read_news=. if freq_read_news==9
+(163 real changes made, 163 to missing)
+
+. replace dist_health_facility=. if dist_health_facility==9
+(111 real changes made, 111 to missing)
+
+. 
+. /*Generating of Intervening Variables*/
+. egen media_exposure = rowmax( freq_read_news freq_list_radio freq_watch_tv )
+(13 missing values generated)
+
+. lab def media_exposure 0 "No exposure" 1 "Low exposure" 2 "High exposure"
+
+. lab val media_exposure media_exposure
+
+. 
+. /*Recoding of Variables*/
+. recode child_age(min/11=1 "<12 months")(12/23=2 "12-23 months")(24/59=3 "24-59 months"), gen(child_age2)
+(26992 differences between child_age and child_age2)
+
+. recode maternal_age(min/19=1 "< 20 yrs") (20/29=2 "20-29 yrs") (30/39=3 "30-39 yrs")(40/max=4 "40 yrs+"),gen(maternal_age2)
+(27599 differences between maternal_age and maternal_age2)
+
+. recode no_under_5(0/2=1 "<=2 (small size)")(3/6=2 "3-6(average size)")(7/max=3 ">=4(large)"), gen(num_under_5)
+(20838 differences between no_under_5 and num_under_5)
+
+. recode fam_size(min/3=1 "<=3(small size)")(4/6=2 "4-6(medium size)")(7/max=3 ">=7(large size)"), gen(fam_size2)
+(27599 differences between fam_size and fam_size2)
+
+. recode birth_int(min/11=1 "<12 months")(12/23=2 "12-23 months")(24/47=3 "24-47 months")(48/max=4 "48 months+"),gen(birth_int2)
+(22349 differences between birth_int and birth_int2)
+
+. 
+. /*Applying of Weight to Dataset*/
+. /* Apply weigth to Data*/
+. gen wgt = v005/1000000
+
+. svyset[pw=wgt],psu(v001)strata(v002)singleunit(center)
+
+      pweight: wgt
+          VCE: linearized
+  Single unit: centered
+     Strata 1: v002
+         SU 1: v001
+        FPC 1: <zero>
+
+. 
+. /*Data Analysis*/
+. /*Univariate Analysis*/
+. 
+. /*Percentage Distribution by Child Age*/
+. tab child_age2[aw=wgt]
+
+   RECODE of |
+   child_age |
+(Child's age |
+  in months) |      Freq.     Percent        Cum.
+-------------+-----------------------------------
+  <12 months | 6,132.7023       22.28       22.28
+12-23 months | 5,725.3297       20.80       43.07
+24-59 months | 15,670.968       56.93      100.00
+-------------+-----------------------------------
+       Total |     27,529      100.00
+
+. /*Percentage Distribution by Child Sex*/
+. tab child_sex[aw=wgt]
+
+     Sex of |
+      child |      Freq.     Percent        Cum.
+------------+-----------------------------------
+       Male | 13,859.422       50.22       50.22
+     Female | 13,739.578       49.78      100.00
+------------+-----------------------------------
+      Total |     27,599      100.00
+
+. /*Percentage Distribution by Birth Size*/
+. tab birth_size[aw=wgt]
+
+    Size of child at |
+               birth |      Freq.     Percent        Cum.
+---------------------+-----------------------------------
+          Very large | 3,836.2925       14.10       14.10
+ Larger than average | 8,178.0925       30.07       44.17
+             Average | 11,238.309       41.32       85.49
+Smaller than average | 2,806.9956       10.32       95.81
+          Very small | 1,140.3099        4.19      100.00
+---------------------+-----------------------------------
+               Total |     27,200      100.00
+
+. /*Percentage Distribution by Maternal Age*/
+. tab maternal_age2[aw=wgt]
+
+  RECODE of |
+maternal_ag |
+  e (Age of |
+ respondent |
+     at 1st |
+     birth) |      Freq.     Percent        Cum.
+------------+-----------------------------------
+   < 20 yrs | 16,300.429       59.06       59.06
+  20-29 yrs | 10,588.271       38.36       97.43
+  30-39 yrs | 702.941298        2.55       99.97
+    40 yrs+ |  7.3587177        0.03      100.00
+------------+-----------------------------------
+      Total |     27,599      100.00
+
+. /*Percentage Distribution by Birth Interval*/
+. tab birth_int2[aw=wgt]
+
+   RECODE of |
+   birth_int |
+  (Preceding |
+       birth |
+    interval |
+   (months)) |      Freq.     Percent        Cum.
+-------------+-----------------------------------
+  <12 months | 153.790304        0.69        0.69
+12-23 months |4,711.91219       21.08       21.77
+24-47 months | 13,330.666       59.65       81.42
+  48 months+ | 4,152.6313       18.58      100.00
+-------------+-----------------------------------
+       Total |     22,349      100.00
+
+. /*Percentage Distribution of Number of Under-Five Children in a Household*/
+. tab num_under_5[aw=wgt]
+
+        RECODE of |
+       no_under_5 |
+       (Number of |
+   children 5 and |
+         under in |
+    household (de |
+           jure)) |      Freq.     Percent        Cum.
+------------------+-----------------------------------
+ <=2 (small size) | 18,168.258       65.83       65.83
+3-6(average size) | 9,264.6197       33.57       99.40
+       >=4(large) | 166.122051        0.60      100.00
+------------------+-----------------------------------
+            Total |     27,599      100.00
+
+. /*Percentage Distribution of Level of Education*/
+. tab level_edu[aw=wgt]
+
+     Highest |
+ educational |
+       level |      Freq.     Percent        Cum.
+-------------+-----------------------------------
+No education | 13,390.277       48.52       48.52
+     Primary | 5,272.8728       19.11       67.62
+   Secondary | 7,284.7095       26.39       94.02
+      Higher |1,651.14059        5.98      100.00
+-------------+-----------------------------------
+       Total |     27,599      100.00
+
+. /*Percentage Distribution of Wealth Index*/
+. tab wealth_index[aw=wgt]
+
+     Wealth |
+      index |      Freq.     Percent        Cum.
+------------+-----------------------------------
+    Poorest | 6,360.3927       23.05       23.05
+     Poorer | 6,173.8034       22.37       45.42
+     Middle | 5,234.9186       18.97       64.38
+     Richer | 4,998.8303       18.11       82.50
+    Richest | 4,831.0551       17.50      100.00
+------------+-----------------------------------
+      Total |     27,599      100.00
+
+. /*Percentage Distribution of Family Size*/
+. tab fam_size2[aw=wgt]
+
+       RECODE of |
+fam_size (Number |
+    of household |
+         members |
+       (listed)) |      Freq.     Percent        Cum.
+-----------------+-----------------------------------
+ <=3(small size) | 2,541.5394        9.21        9.21
+4-6(medium size) | 12,110.992       43.88       53.09
+ >=7(large size) | 12,946.469       46.91      100.00
+-----------------+-----------------------------------
+           Total |     27,599      100.00
+
+. /*Percentage Distribution of Region*/
+. tab region[aw=wgt]
+
+       Region |      Freq.     Percent        Cum.
+--------------+-----------------------------------
+North Central | 3,767.4437       13.65       13.65
+   North East | 4,771.7477       17.29       30.94
+   North West | 10,171.547       36.85       67.79
+   South East |  2,447.545        8.87       76.66
+  South South | 2,566.0883        9.30       85.96
+   South West | 3,874.6284       14.04      100.00
+--------------+-----------------------------------
+        Total |     27,599      100.00
+
+. /*Percentage Distribution of Residence*/
+. tab residence[aw=wgt]
+
+    Type of |
+   place of |
+  residence |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      Urban | 9,948.8731       36.05       36.05
+      Rural | 17,650.127       63.95      100.00
+------------+-----------------------------------
+      Total |     27,599      100.00
+
+. 
+. /*Bivariate Analysis*/
+. 
+. /*Cross Tabulation of Stunting by Child Age*/
+. svy:tab child_age2 stunt,per obs row
+(running tabulate on estimation sample)
+
+Number of strata   =       200                  Number of obs     =     24,478
+Number of PSUs     =    15,588                  Population size   = 24,434.983
+                                                Design df         =     15,388
+
+-------------------------------------
+RECODE of |
+child_age |
+(Child's  |    Stunting (using WHO   
+age in    |    standard, <-2 SDs)    
+months)   |       0        1    Total
+----------+--------------------------
+ <12 mont |   79.13    20.87      100
+          |    4272     1043     5315
+          | 
+ 12-23 mo |   62.07    37.93      100
+          |    3168     1871     5039
+          | 
+ 24-59 mo |   57.78    42.22      100
+          |    8207     5917  1.4e+04
+          | 
+    Total |   63.24    36.76      100
+          | 1.6e+04     8831  2.4e+04
+-------------------------------------
+  Key:  row percentage
+        number of observations
+
+  Pearson:
+    Uncorrected   chi2(2)         =  756.0430
+    Design-based  F(2.00, 30763.15)=  279.5641    P = 0.0000
+
+Note: Strata with single sampling unit centered at overall mean.
+
+. /*Cross Tabulation of Stunting by Child Sex*/
+. svy:tab child_sex stunt,per obs col
+(running tabulate on estimation sample)
+
+Number of strata   =       200                  Number of obs     =     24,478
+Number of PSUs     =    15,588                  Population size   = 24,434.983
+                                                Design df         =     15,388
+
+-------------------------------------
+          |    Stunting (using WHO   
+Sex of    |    standard, <-2 SDs)    
+child     |       0        1    Total
+----------+--------------------------
+     Male |   48.19    52.24    49.68
+          |    7608     4636  1.2e+04
+          | 
+   Female |   51.81    47.76    50.32
+          |    8039     4195  1.2e+04
+          | 
+    Total |     100      100      100
+          | 1.6e+04     8831  2.4e+04
+-------------------------------------
+  Key:  column percentage
+        number of observations
+
+  Pearson:
+    Uncorrected   chi2(1)         =   37.4496
+    Design-based  F(1, 15388)     =   27.0704     P = 0.0000
+
+Note: Strata with single sampling unit centered at overall mean.
+
+. /*Cross Tabulation of Stunting by Birth Size*/
+. svy:tab birth_size stunt,per obs row
+(running tabulate on estimation sample)
+
+Number of strata   =       199                  Number of obs     =     24,128
+Number of PSUs     =    15,485                  Population size   = 24,100.693
+                                                Design df         =     15,286
+
+-------------------------------------
+Size of   |    Stunting (using WHO   
+child at  |    standard, <-2 SDs)    
+birth     |       0        1    Total
+----------+--------------------------
+ Very lar |   68.23    31.77      100
+          |    2286     1031     3317
+          | 
+ Larger t |   66.68    33.32      100
+          |    4947     2528     7475
+          | 
+  Average |   61.85    38.15      100
+          |    6321     3663     9984
+          | 
+  Smaller |   55.67    44.33      100
+          |    1392     1064     2456
+          | 
+ Very sma |   54.45    45.55      100
+          |     496      400      896
+          | 
+    Total |    63.3     36.7      100
+          | 1.5e+04     8686  2.4e+04
+-------------------------------------
+  Key:  row percentage
+        number of observations
+
+  Pearson:
+    Uncorrected   chi2(4)         =  173.6974
+    Design-based  F(3.99, 60984.73)=   29.2087    P = 0.0000
+
+Note: Strata with single sampling unit centered at overall mean.
+
+. /*Cross Tabulation of Stunting by Maternal Age*/
+. svy:tab maternal_age2 stunt,per obs row
+(running tabulate on estimation sample)
+
+Number of strata   =       200                  Number of obs     =     24,478
+Number of PSUs     =    15,588                  Population size   = 24,434.983
+                                                Design df         =     15,388
+
+-------------------------------------
+RECODE of |
+maternal_ |
+age (Age  |
+of        |
+responden |    Stunting (using WHO   
+t at 1st  |    standard, <-2 SDs)    
+birth)    |       0        1    Total
+----------+--------------------------
+ < 20 yrs |      57       43      100
+          |    8129     6014  1.4e+04
+          | 
+ 20-29 yr |   71.38    28.62      100
+          |    7003     2695     9698
+          | 
+ 30-39 yr |   80.65    19.35      100
+          |     506      121      627
+          | 
+  40 yrs+ |   93.34     6.66      100
+          |       9        1       10
+          | 
+    Total |   63.24    36.76      100
+          | 1.6e+04     8831  2.4e+04
+-------------------------------------
+  Key:  row percentage
+        number of observations
+
+  Pearson:
+    Uncorrected   chi2(3)         =  594.7063
+    Design-based  F(2.51, 38551.10)=  169.7878    P = 0.0000
+
+Note: Strata with single sampling unit centered at overall mean.
+
+. /*Cross Tabulation of Stunting by Birth Interval*/
+. svy:tab birth_int2 stunt,per obs row
+(running tabulate on estimation sample)
+
+Number of strata   =       193                  Number of obs     =     19,819
+Number of PSUs     =    12,969                  Population size   = 19,767.537
+                                                Design df         =     12,776
+
+-------------------------------------
+RECODE of |
+birth_int |
+(Precedin |
+g birth   |    Stunting (using WHO   
+interval  |    standard, <-2 SDs)    
+(months)) |       0        1    Total
+----------+--------------------------
+ <12 mont |   53.85    46.15      100
+          |      60       51      111
+          | 
+ 12-23 mo |   58.78    41.22      100
+          |    2449     1718     4167
+          | 
+ 24-47 mo |   62.01    37.99      100
+          |    7417     4419  1.2e+04
+          | 
+ 48 month |    68.2     31.8      100
+          |    2582     1123     3705
+          | 
+    Total |   62.42    37.58      100
+          | 1.3e+04     7311  2.0e+04
+-------------------------------------
+  Key:  row percentage
+        number of observations
+
+  Pearson:
+    Uncorrected   chi2(3)         =   81.0294
+    Design-based  F(2.97, 37981.27)=   17.5153    P = 0.0000
+
+Note: Strata with single sampling unit centered at overall mean.
+
+. /*Cross Tabulation of Stunting by Number of Under-Five Children in a Household*/
+. svy:tab num_under_5 stunt,per obs row
+(running tabulate on estimation sample)
+
+Number of strata   =       200                  Number of obs     =     24,478
+Number of PSUs     =    15,588                  Population size   = 24,434.983
+                                                Design df         =     15,388
+
+-------------------------------------
+RECODE of |
+no_under_ |
+5 (Number |
+of        |
+children  |
+5 and     |
+under in  |
+household |    Stunting (using WHO   
+(de       |    standard, <-2 SDs)    
+jure))    |       0        1    Total
+----------+--------------------------
+ <=2 (sma |    65.8     34.2      100
+          | 1.1e+04     5435  1.6e+04
+          | 
+ 3-6(aver |   58.34    41.66      100
+          |    4862     3342     8204
+          | 
+ >=4(larg |   55.86    44.14      100
+          |      76       54      130
+          | 
+    Total |   63.24    36.76      100
+          | 1.6e+04     8831  2.4e+04
+-------------------------------------
+  Key:  row percentage
+        number of observations
+
+  Pearson:
+    Uncorrected   chi2(2)         =  133.5979
+    Design-based  F(1.97, 30250.64)=   33.4454    P = 0.0000
+
+Note: Strata with single sampling unit centered at overall mean.
+
+. /*Cross Tabulation of Stunting by Level of Education*/
+. svy:tab level_edu stunt,per obs row
+(running tabulate on estimation sample)
+
+Number of strata   =       200                  Number of obs     =     24,478
+Number of PSUs     =    15,588                  Population size   = 24,434.983
+                                                Design df         =     15,388
+
+-------------------------------------
+Highest   |    Stunting (using WHO   
+education |    standard, <-2 SDs)    
+al level  |       0        1    Total
+----------+--------------------------
+ No educa |   50.22    49.78      100
+          |    5410     5424  1.1e+04
+          | 
+  Primary |   66.94    33.06      100
+          |    3452     1724     5176
+          | 
+ Secondar |   77.42    22.58      100
+          |    5375     1483     6858
+          | 
+   Higher |   86.69    13.31      100
+          |    1410      200     1610
+          | 
+    Total |   63.24    36.76      100
+          | 1.6e+04     8831  2.4e+04
+-------------------------------------
+  Key:  row percentage
+        number of observations
+
+  Pearson:
+    Uncorrected   chi2(3)         = 1791.4731
+    Design-based  F(3.00, 46112.36)=  371.4972    P = 0.0000
+
+Note: Strata with single sampling unit centered at overall mean.
+
+. /*Cross Tabulation of Stunting by Wealth Index*/
+. svy:tab wealth_index stunt,per obs row
+(running tabulate on estimation sample)
+
+Number of strata   =       200                  Number of obs     =     24,478
+Number of PSUs     =    15,588                  Population size   = 24,434.983
+                                                Design df         =     15,388
+
+-------------------------------------
+          |    Stunting (using WHO   
+Wealth    |    standard, <-2 SDs)    
+index     |       0        1    Total
+----------+--------------------------
+  Poorest |   46.11    53.89      100
+          |    2347     2763     5110
+          | 
+   Poorer |   54.19    45.81      100
+          |    2992     2481     5473
+          | 
+   Middle |   64.92    35.08      100
+          |    3230     1733     4963
+          | 
+   Richer |      74       26      100
+          |    3580     1169     4749
+          | 
+  Richest |   81.94    18.06      100
+          |    3498      685     4183
+          | 
+    Total |   63.24    36.76      100
+          | 1.6e+04     8831  2.4e+04
+-------------------------------------
+  Key:  row percentage
+        number of observations
+
+  Pearson:
+    Uncorrected   chi2(4)         = 1771.4694
+    Design-based  F(3.98, 61267.20)=  269.0333    P = 0.0000
+
+Note: Strata with single sampling unit centered at overall mean.
+
+. /*Cross Tabulation of Stunting by Family Size*/
+. svy:tab fam_size2 stunt,per obs row
+(running tabulate on estimation sample)
+
+Number of strata   =       200                  Number of obs     =     24,478
+Number of PSUs     =    15,588                  Population size   = 24,434.983
+                                                Design df         =     15,388
+
+-------------------------------------
+RECODE of |
+fam_size  |
+(Number   |
+of        |
+household |    Stunting (using WHO   
+members   |    standard, <-2 SDs)    
+(listed)) |       0        1    Total
+----------+--------------------------
+ <=3(smal |   67.72    32.28      100
+          |    1494      690     2184
+          | 
+ 4-6(medi |   67.61    32.39      100
+          |    7288     3413  1.1e+04
+          | 
+ >=7(larg |   58.23    41.77      100
+          |    6865     4728  1.2e+04
+          | 
+    Total |   63.24    36.76      100
+          | 1.6e+04     8831  2.4e+04
+-------------------------------------
+  Key:  row percentage
+        number of observations
+
+  Pearson:
+    Uncorrected   chi2(2)         =  231.6942
+    Design-based  F(1.99, 30643.85)=   74.3134    P = 0.0000
+
+Note: Strata with single sampling unit centered at overall mean.
+
+. /*Cross Tabulation of Stunting by Region*/
+. svy:tab region stunt,per obs row
+(running tabulate on estimation sample)
+
+Number of strata   =       200                  Number of obs     =     24,478
+Number of PSUs     =    15,588                  Population size   = 24,434.983
+                                                Design df         =     15,388
+
+-------------------------------------
+          |    Stunting (using WHO   
+          |    standard, <-2 SDs)    
+   Region |       0        1    Total
+----------+--------------------------
+ North Ce |   71.18    28.82      100
+          |    2718     1095     3813
+          | 
+ North Ea |   57.94    42.06      100
+          |    2752     2143     4895
+          | 
+ North We |   45.12    54.88      100
+          |    3190     3940     7130
+          | 
+ South Ea |   84.75    15.25      100
+          |    1952      334     2286
+          | 
+ South So |   82.13    17.87      100
+          |    2430      610     3040
+          | 
+ South We |   78.26    21.74      100
+          |    2605      709     3314
+          | 
+    Total |   63.24    36.76      100
+          | 1.6e+04     8831  2.4e+04
+-------------------------------------
+  Key:  row percentage
+        number of observations
+
+  Pearson:
+    Uncorrected   chi2(5)         = 2527.2965
+    Design-based  F(4.88, 75047.31)=  325.8994    P = 0.0000
+
+Note: Strata with single sampling unit centered at overall mean.
+
+. /*Cross Tabulation of Stunting by Residence*/
+. svy:tab residence stunt,per obs row
+(running tabulate on estimation sample)
+
+Number of strata   =       200                  Number of obs     =     24,478
+Number of PSUs     =    15,588                  Population size   = 24,434.983
+                                                Design df         =     15,388
+
+-------------------------------------
+Type of   |    Stunting (using WHO   
+place of  |    standard, <-2 SDs)    
+residence |       0        1    Total
+----------+--------------------------
+    Urban |   74.03    25.97      100
+          |    6380     2131     8511
+          | 
+    Rural |   56.92    43.08      100
+          |    9267     6700  1.6e+04
+          | 
+    Total |   63.24    36.76      100
+          | 1.6e+04     8831  2.4e+04
+-------------------------------------
+  Key:  row percentage
+        number of observations
+
+  Pearson:
+    Uncorrected   chi2(1)         =  717.7257
+    Design-based  F(1, 15388)     =  412.1303     P = 0.0000
+
+Note: Strata with single sampling unit centered at overall mean.
+
+. 
+. /*Multivariate Analysis*/
+. 
+. /*Binary Logistic Regression Analysis of Influence of Individual Level Factors on Stunting*/
+. svy:logistic stunt i.child_age2 i.child_sex i.birth_size
+(running logistic on estimation sample)
+
+Survey: Logistic regression
+
+Number of strata   =       199                  Number of obs     =     24,128
+Number of PSUs     =    15,485                  Population size   = 24,100.693
+                                                Design df         =     15,286
+                                                F(   7,  15280)   =      94.83
+                                                Prob > F          =     0.0000
+
+---------------------------------------------------------------------------------------
+                      |             Linearized
+                stunt | Odds Ratio   Std. Err.      t    P>|t|     [95% Conf. Interval]
+----------------------+----------------------------------------------------------------
+           child_age2 |
+        12-23 months  |   2.349199   .1230909    16.30   0.000     2.119902    2.603297
+        24-59 months  |   2.817151   .1263903    23.09   0.000     2.579991    3.076111
+                      |
+            child_sex |
+              Female  |   .8356662   .0269872    -5.56   0.000     .7844074    .8902745
+                      |
+           birth_size |
+ Larger than average  |   1.092612   .0600465     1.61   0.107     .9810312    1.216883
+             Average  |   1.356617   .0728251     5.68   0.000     1.221124    1.507143
+Smaller than average  |   1.824336   .1260742     8.70   0.000     1.593222    2.088976
+          Very small  |    1.99057   .1981897     6.91   0.000     1.637652    2.419544
+                      |
+                _cons |   .2226063   .0138105   -24.22   0.000     .1971172    .2513913
+---------------------------------------------------------------------------------------
+Note: Strata with single sampling unit centered at overall mean.
+
+. /*Binary Logistic Regression Analysis of Influence of Maternal Level Factors on Stunting*/
+. svy:logistic stunt i.maternal_age2 i.birth_int2
+(running logistic on estimation sample)
+
+note: 4.maternal_age2 != 0 predicts failure perfectly
+      4.maternal_age2 dropped and 1 obs not used
+
+Survey: Logistic regression
+
+Number of strata   =       193                  Number of obs     =     19,818
+Number of PSUs     =    12,968                  Population size   =  19,766.91
+                                                Design df         =     12,775
+                                                F(   5,  12771)   =      56.68
+                                                Prob > F          =     0.0000
+
+-------------------------------------------------------------------------------
+              |             Linearized
+        stunt | Odds Ratio   Std. Err.      t    P>|t|     [95% Conf. Interval]
+--------------+----------------------------------------------------------------
+maternal_age2 |
+   20-29 yrs  |   .5658299   .0226277   -14.24   0.000       .52317    .6119683
+   30-39 yrs  |   .3618384   .0549752    -6.69   0.000     .2686438    .4873628
+     40 yrs+  |          1  (empty)
+              |
+   birth_int2 |
+12-23 months  |   .8052375   .2009906    -0.87   0.385     .4936742    1.313432
+24-47 months  |   .6859744   .1706195    -1.52   0.130     .4212812    1.116976
+  48 months+  |   .5222136   .1317137    -2.58   0.010     .3185196    .8561705
+              |
+        _cons |   1.102951   .2741492     0.39   0.693      .677582    1.795357
+-------------------------------------------------------------------------------
+Note: Strata with single sampling unit centered at overall mean.
+
+. /*Binary Logistic Regression Analysis of Influence of Household Level Factors on Stunting*/
+. svy:logistic stunt i.num_under_5 i.level_edu i.wealth_index i.fam_size2
+(running logistic on estimation sample)
+
+Survey: Logistic regression
+
+Number of strata   =       200                  Number of obs     =     24,478
+Number of PSUs     =    15,588                  Population size   = 24,434.983
+                                                Design df         =     15,388
+                                                F(  11,  15378)   =     108.42
+                                                Prob > F          =     0.0000
+
+------------------------------------------------------------------------------------
+                   |             Linearized
+             stunt | Odds Ratio   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------------+----------------------------------------------------------------
+       num_under_5 |
+3-6(average size)  |   1.044706   .0438965     1.04   0.298     .9621115    1.134391
+       >=4(large)  |   1.202224   .2500762     0.89   0.376     .7996717    1.807419
+                   |
+         level_edu |
+          Primary  |   .6453193   .0307123    -9.20   0.000     .5878421    .7084165
+        Secondary  |     .48494   .0261056   -13.44   0.000     .4363771    .5389074
+           Higher  |   .3093499   .0345474   -10.51   0.000     .2485322    .3850502
+                   |
+      wealth_index |
+           Poorer  |   .8223978   .0403671    -3.98   0.000     .7469607    .9054535
+           Middle  |   .6179332   .0341533    -8.71   0.000     .5544875    .6886385
+           Richer  |    .477272    .029893   -11.81   0.000     .4221322    .5396143
+          Richest  |   .3885951      .0298   -12.33   0.000     .3343616    .4516252
+                   |
+         fam_size2 |
+ 4-6(medium size)  |   .9420078   .0605585    -0.93   0.353     .8304802    1.068513
+  >=7(large size)  |   1.033915   .0696499     0.50   0.621     .9060226    1.179861
+                   |
+             _cons |   1.211768     .08103     2.87   0.004     1.062909    1.381476
+------------------------------------------------------------------------------------
+Note: Strata with single sampling unit centered at overall mean.
+
+. /*Binary Logistic Regression Analysis of Influence of Community Level Factors on Stunting*/
+. svy:logistic stunt i.region i.residence
+(running logistic on estimation sample)
+
+Survey: Logistic regression
+
+Number of strata   =       200                  Number of obs     =     24,478
+Number of PSUs     =    15,588                  Population size   = 24,434.983
+                                                Design df         =     15,388
+                                                F(   6,  15383)   =     255.26
+                                                Prob > F          =     0.0000
+
+------------------------------------------------------------------------------
+             |             Linearized
+       stunt | Odds Ratio   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+      region |
+ North East  |    1.82478   .1061969    10.33   0.000     1.628055    2.045275
+ North West  |   3.049481   .1643798    20.68   0.000     2.743715    3.389323
+ South East  |   .5470051   .0506408    -6.52   0.000     .4562285    .6558438
+South South  |   .5641194   .0417802    -7.73   0.000     .4878921    .6522564
+ South West  |   .8570688   .0626159    -2.11   0.035     .7427173    .9890263
+             |
+   residence |
+      Rural  |   1.583406   .0646148    11.26   0.000     1.461686    1.715262
+       _cons |    .281954   .0157948   -22.60   0.000     .2526336    .3146773
+------------------------------------------------------------------------------
+Note: Strata with single sampling unit centered at overall mean.
+
+. /*Binary Logistic Regression Analysis of Selected Intervening Factors on Stunting*/ 
+. svy:logistic stunt i.media_exposure i.dist_health_facility
+(running logistic on estimation sample)
+
+Survey: Logistic regression
+
+Number of strata   =       200                  Number of obs     =     24,380
+Number of PSUs     =    15,532                  Population size   = 24,327.943
+                                                Design df         =     15,332
+                                                F(   3,  15330)   =     145.61
+                                                Prob > F          =     0.0000
+
+--------------------------------------------------------------------------------------
+                     |             Linearized
+               stunt | Odds Ratio   Std. Err.      t    P>|t|     [95% Conf. Interval]
+---------------------+----------------------------------------------------------------
+      media_exposure |
+       Low exposure  |   .7271639   .0333279    -6.95   0.000     .6646857    .7955147
+      High exposure  |   .4918929   .0197587   -17.66   0.000      .454649    .5321878
+                     |
+dist_health_facility |
+  Not a big problem  |   .7784622   .0288569    -6.76   0.000     .7239053    .8371308
+               _cons |   1.010345   .0349568     0.30   0.766     .9440975    1.081242
+--------------------------------------------------------------------------------------
+Note: Strata with single sampling unit centered at overall mean.
+
+. 
+end of do-file
+
