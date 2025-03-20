@@ -79,7 +79,6 @@ rename v467d dist_health_facility
 keep stunt v005 v001 v002 child_age child_sex birth_size maternal_age birth_int no_under_5 level_edu wealth_index fam_size region residence freq_watch_tv freq_list_radio freq_read_news dist_health_facility
 ```
 
-
 - Frequency Dist Table
 
   ```
@@ -123,7 +122,6 @@ recode no_under_5(0/2=1 "<=2 (small size)")(3/6=2 "3-6(average size)")(7/max=3 "
 recode fam_size(min/3=1 "<=3(small size)")(4/6=2 "4-6(medium size)")(7/max=3 ">=7(large size)"), gen(fam_size2)
 recode birth_int(min/11=1 "<12 months")(12/23=2 "12-23 months")(24/47=3 "24-47 months")(48/max=4 "48 months+"),gen(birth_int2)
 ```
-
 
 - Applying of Weight to Dataset
 
