@@ -81,7 +81,7 @@ keep stunt v005 v001 v002 child_age child_sex birth_size maternal_age birth_int 
 
 - Frequency Dist Table
 
-  ```
+```
 tab1 child_age child_sex birth_size maternal_age birth_int no_under_5 level_edu wealth_index fam_size region residence freq_watch_tv freq_list_radio freq_read_news dist_health_facility
 ```
 
